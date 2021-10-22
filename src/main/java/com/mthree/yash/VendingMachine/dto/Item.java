@@ -7,9 +7,7 @@ public class Item {
 
     private String name;
     private BigDecimal cost;
-    private int inventory; // no of items in inventory
-
-
+    private int inventory;
 
     public Item(String name, String cost, int inventory) {
         this.name = name;
@@ -41,16 +39,6 @@ public class Item {
         this.inventory = inventory;
     }
 
-    @Override
-    public int hashCode() {
-        int hash = 7;
-        hash = 97 * hash + Objects.hashCode(this.name);
-        hash = 97 * hash + Objects.hashCode(this.cost);
-        hash = 97 * hash + this.inventory;
-        return hash;
-    }
-
-    @Override
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
@@ -74,7 +62,6 @@ public class Item {
         return true;
     }
 
-    @Override
     public String toString() {
         return "Item{" + "name=" + name + ", cost=" + cost + ", inventory=" + inventory + '}';
     }

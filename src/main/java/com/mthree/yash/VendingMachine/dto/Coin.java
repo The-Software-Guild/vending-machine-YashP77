@@ -1,8 +1,8 @@
 package com.mthree.yash.VendingMachine.dto;
 
 public enum Coin {
-    //Enum is a special class that represents a group of constants, like final variables
-    POUND(100), FIFTY(50), TWENTY(25), TEN(10), FIVE(5), PENNY(1);
+
+    POUND(100), FIFTY(50), TWENTY(20), TEN(10), FIVE(5), PENNY(1);
     private final int value;
 
     Coin (int value) {
