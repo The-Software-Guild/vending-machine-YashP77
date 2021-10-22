@@ -7,7 +7,7 @@ public class Item {
 
     private String name;
     private BigDecimal cost;
-    private int inventory; // no of items in inventory
+    private int inventory;
 
 
 

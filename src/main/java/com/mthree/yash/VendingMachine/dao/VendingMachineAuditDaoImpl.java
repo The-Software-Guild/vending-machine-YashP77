@@ -8,11 +8,11 @@ import java.time.LocalDateTime;
 public class VendingMachineAuditDaoImpl implements VendingMachineAuditDao {
 
     private final String AUDIT_FILE;
-    //Default constructor
+
     public VendingMachineAuditDaoImpl() {
         this.AUDIT_FILE = "audit.txt";
     }
-    //Contructor for testing
+
     public VendingMachineAuditDaoImpl(String auditTestFile) {
         this.AUDIT_FILE = auditTestFile;
     }
@@ -27,7 +27,7 @@ public class VendingMachineAuditDaoImpl implements VendingMachineAuditDao {
             throw new VendingMachinePersistenceException("Could not persist audit information", e);
         }
         LocalDateTime timestamp = LocalDateTime.now();
-        out.println(timestamp.toString() + " : " +entry);
+        out.println(timestamp.toString() + " :  " +entry);
         out.flush();
     }
 
